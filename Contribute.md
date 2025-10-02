@@ -41,3 +41,4 @@
 - RUN `docker-compose up -d --build` (1st first time)
 - RUN `docker-compose up` (to start)
 - RUN `docker-compose down` (to stop)
+- RUN `docker-compose logs -f` (to checks logs)

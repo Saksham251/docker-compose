@@ -21,6 +21,7 @@ CMD ["npm", "start"]
 
 
 
+# locally
 
 # FROM node:20-alpine
 
@@ -33,9 +34,6 @@ CMD ["npm", "start"]
 # # Copy rest of the code
 # COPY . .
 
-# ENV DATABASE_URL=postgresql://postgres:mysecretpassword@postgres:5432/postgres
-
-# RUN DATABASE_URL=$DATABASE_URL npx prisma migrate dev 
 # # Generate prisma client
 # RUN npx prisma generate
 
@@ -44,4 +42,4 @@ CMD ["npm", "start"]
 
 # EXPOSE 3000
 
-# CMD ["npm", "start"]
+# CMD ["npm", "run", "dev:docker"]
