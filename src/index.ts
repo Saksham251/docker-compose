@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/";
+import { PrismaClient } from "@prisma/client";
 import express from "express"
 
 const prismaClient = new PrismaClient();
@@ -24,4 +24,6 @@ app.post("/", async (req, res) => {
         result
     })
 });
-app.listen(3000, () => { "Server is listening on PORT:3000" });
+app.listen(3000, () => {
+  console.log("Server is listening on PORT:3000");
+});
