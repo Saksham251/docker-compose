@@ -38,4 +38,6 @@
 
 ## Docker Compose Installation
 - Install Docker, Docker Compose
-- RUN `docker-compose up`
+- RUN `docker-compose up -d --build` (1st first time)
+- RUN `docker-compose up` (to start)
+- RUN `docker-compose down` (to stop)
